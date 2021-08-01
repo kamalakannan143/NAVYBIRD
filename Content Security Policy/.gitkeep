@@ -1,1 +1,35 @@
 
+
+
+
+X-Xss-Protection: 1; mode=block
+
+
+
+CSP Supported Directives:
+* script-src
+* object-src
+* style-src
+* img-src
+* media-src
+* frame-src
+* frame-ancestors
+* font-src
+* sandbox 
+* plugin-types
+* report-uri
+* connect-src
+* form-action
+* unsafe-inline
+
+Syntax: 
+  Content-security-policy: default-src 'self' https://ownsite.com; script-src 'self' ownsite.com *.ownsite.com; img-src 'self' 
+
+Violation: 
+  Content-Security-Policy: default-src 'none'; style-src tparty.com; report-uri /_/csp-reports
+
+
+Bounties : 
+
+CSP "%" in hackerone: Rewards 500$ bounty : https://hackerone.com/reports/250729
+"unsafe-inline" : Bounty $2000 ---> https://hackerone.com/reports/47472 
